@@ -11,7 +11,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CucumberHooksStepDef {
     WebDriver driver = null;
 
-    @Before
+    /**
+     * This before will execute first
+     * 1 then 2
+     * but after behaves opposite
+     */
+    @Before(order = 1)
     public void beforeSetup(){
         System.out.println("In Before Call");
         //Adding driver name"webdriver.chrome.driver" and the path
@@ -19,6 +24,12 @@ public class CucumberHooksStepDef {
 
         //Assign the Chrome Driver
         driver = new ChromeDriver();
+    }
+
+    @Before(order = 2)
+    public void beforeSetup1(){
+        System.out.println("In Before1 Call");
+
     }
 
     @Given("^User need to be on facebook login page$")
@@ -83,11 +94,21 @@ public class CucumberHooksStepDef {
 //
 //    }
 
-    @After
+    /**
+     * In after it behaves the opp of before means
+     * order 2 will execute first then order 1
+     * B-1, B-2, A-2, and then A-1
+     */
+    @After(order = 2)
     public void tearDown(){
         System.out.println("In After Call");
         driver.quit();
         driver = null;
+    }
+
+    @After(order = 1)
+    public void tearDown1(){
+        System.out.println("In After1 Call");
     }
 
 }
