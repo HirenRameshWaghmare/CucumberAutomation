@@ -35,7 +35,12 @@
   <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>5.0.9</version>
+    <version>4.0.9</version>
+  </dependency>
+  <dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>1.2.4</version>
   </dependency>
 </dependencies>
 

@@ -32,8 +32,9 @@ import org.junit.runner.RunWith;
         //  glue = {"com/nisren/firsefeatturefile/", "com/nisren/otherlocation"},
         glue = {"com/nisren/tagsstepdef/"},
         plugin = {"pretty",
-                  "html:target/cucumber-htmlreport",
-                "json:target/cucumber-report.json",
+                         "html:target/cucumber-htmlreport",
+                        "json:target/cucumber-report.json",
+                        "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport.html"
         }
 )
 public class TagsTest {
