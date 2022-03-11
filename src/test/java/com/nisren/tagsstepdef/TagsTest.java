@@ -33,7 +33,7 @@ import org.junit.runner.RunWith;
         glue = {"com/nisren/tagsstepdef/"},
         plugin = {"pretty",
                          "html:target/cucumber-htmlreport",
-                        "json:target/cucumber-report.json",
+                        "json:target/cucumber-report10.json",
                         "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport.html"
         }
 )

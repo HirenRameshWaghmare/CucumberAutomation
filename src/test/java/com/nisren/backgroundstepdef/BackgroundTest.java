@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         glue = {"com/nisren/backgroundstepdef/"},
         plugin = {"pretty",
                   "html:target/cucumber-htmlreport",
-                "json:target/cucumber-report.json",
+                "json:target/cucumber-report1.json",
         }
 )
 public class BackgroundTest {

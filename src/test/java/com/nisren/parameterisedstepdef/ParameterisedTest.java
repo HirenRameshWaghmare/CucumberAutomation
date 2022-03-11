@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         glue = {"com/nisren/parameterisedstepdef/"},
         plugin = {"pretty",
                   "html:target/cucumber-htmlreport",
-                "json:target/cucumber-report.json",
+                "json:target/cucumber-report8.json",
         }
 )
 public class ParameterisedTest {
